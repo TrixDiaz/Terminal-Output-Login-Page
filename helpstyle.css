@@ -1,0 +1,156 @@
+* {
+    margin: 0;
+	padding: 0;
+	font-family: sans-serif;
+}
+
+.banner {
+	width: 100%;
+	height: 100vh;
+	background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)),url('bgbg.JPG');
+	background-size: cover;
+}
+.loginbox {
+	width: 320px;
+	height: 420px;
+	background: #FFFFFF;
+	color: #000;
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	transform: translate(-50%,-50%);
+	box-sizing: border-box;
+	padding: 70px 30px;
+}
+.navbar {
+    width: 85%;
+	margin: auto;
+	padding: 35px 0;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.logo {
+	width: 120px;
+	cursor: pointer;
+}
+.navbar ul li {
+	list-style: none;
+	display: inline-block;
+	margin: 0 20px;
+	position: relative;
+}
+.navbar ul li a {
+	text-decoration: none;
+	color: #fff;
+	text-transform: uppercase;
+}
+.navbar ul li::after {
+	content: '';
+	height: 3px;
+	width: 0;
+	background:#FFFFFF;
+	position: absolute;
+	left: 0;
+	bottom: -10px;
+	transition: 0.5s;
+}
+.navbar ul li:hover::after {
+	width: 100%;
+}
+h1 {
+	margin: 0;
+	padding: 0 0 20px;
+	text-align: center;
+	font-size: 22px;
+	color: #fff;
+}
+.contact p {
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-weight: bold;
+	color: #fff;
+}
+.container {
+	position: relative;
+	width: 1200px;
+	height: 300px;
+	margin: 50px auto;
+	
+}
+.container .box {
+	position: relative;
+	width: calc(400px - 30px);
+	height: calc(300px - 30px);
+	background: #000;
+	float: left;
+	margin: 15px;
+	box-sizing: border-box;
+	overflow: hidden;
+	border-radius:10px
+}
+.container .box .icon
+{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #fff;
+	transition: 0.5s;
+	z-index: 1;
+}
+.container .box:hover .icon
+{
+	top: 20px;
+	left: calc(50% - 40px);
+	width: 80px;
+	height: 80px;
+	border-radius: 50%;
+	
+}
+.container .box .icon .fa 
+{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 80px;
+	transition: 0.5s;
+	color: #000;
+}
+.container .box:hover .icon .fa
+{
+	font-size: 40px;
+}
+.container .box .content
+{
+	position: absolute;
+	top: 100%;
+	height: calc(100% - 100px);
+	text-align: center;
+	padding: 20px;
+	box-sizing: border-box;
+	color: #fff;
+	transition: 0.5s;
+	opacity: 0;
+}
+.container .box:hover .content
+{
+	top: 100px;
+	opacity: 1;
+}
+.container .box .content h3
+{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+	font-size: 24px;
+}
+.container .box .content p
+{
+	margin: 0;
+	padding: 0;
+	color: #fff;
+}
